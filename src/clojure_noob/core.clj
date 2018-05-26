@@ -2,6 +2,11 @@
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  (println "Im a little teapot!"))
+  (println "I'm just a small teapot that doesn't do much yet!")
+  (if true
+    (do (println "Success!")
+        "By Zues' Hammer!")
+    (do (println "Failure!")
+        "By Aquaman's trident!"))
+  )
