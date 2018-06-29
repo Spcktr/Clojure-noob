@@ -21,5 +21,5 @@
         result {:fruit-counts fruit-count
                 :fruit-costs fruit-cost
                 :total-costs total-costs}]
-    result) 
+    result)
   )
