@@ -3,12 +3,6 @@
 
 (defn -main
   [& args]
-  (println "I'm just a small teapot that doesn't do much yet!")
-  (if true
-    (do (println "Success!")
-        "By Zues' Hammer!")
-    (do (println "Failure!")
-        "By Aquaman's trident!"))
 
   (let [fruit-count {:apple 2 :banana 12 :orange 5 :lemon 6
                       :watermelon 1 :plums 0 :lime 40}
