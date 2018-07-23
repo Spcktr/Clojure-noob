@@ -37,11 +37,11 @@
   [first & more]
   (+ first (count more)))
 
-
-(defn weather-judge
- "given a temp in degrees C, comments on weather"
- [temp]
- (cond
- (< temp 20) "its cold"
- (> temp 20) "its hot"
- :else "it's comfortable"))
+; cond adds else to if statements allowing different responses to paramters
+  (defn weather-judge
+   "given a temp in degrees C, comments on weather"
+   [temp]
+   (cond
+   (< temp 20) "its cold"
+   (> temp 20) "its hot"
+   :else "it's comfortable"))
