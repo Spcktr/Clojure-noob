@@ -3,8 +3,9 @@
 Simple Clojure workspace, being used to work through learning Clojure. And a simple cheatsheet within the .clj file.
 
 ## Usage
+Within the Clojure REPL load the file and run the commands to display examples
 
-    $ java -jar clojure-noob-0.1.0-standalone.jar [args]
+    $ user=> (load-file "filelocation/Clojure-noob/src/clojure_noob/core.clj")
 
 ## Options
 
