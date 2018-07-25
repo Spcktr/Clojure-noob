@@ -43,3 +43,20 @@
    (< temp 20) "its cold"
    (> temp 20) "its hot"
    :else "it's comfortable"))
+
+; let for local binding of variables
+; original
+(defn seconds-to-weeks
+  "converts seconds to weeks"
+  [seconds]
+  (/ (/ (/ (/ seconds 60) 60) 24) 7))
+
+; let to clean up
+(defn seconds-to-weeks
+  "converting seconds to weeks"
+  [seconds]
+  (let [minutes (/ seconds 60)
+        hours (/ minutes 60)
+        days (/ hours 24)
+        weeks (/ days 7)]
+    weeks))
