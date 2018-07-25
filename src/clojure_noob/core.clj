@@ -1,7 +1,5 @@
 (ns clojure-noob.core
-  (:gen-class)
-  (:use x.y.blah :as blah)
-  (:require '[clojure.repl :refer [doc]]))
+  (:gen-class))
 
 (defn -main
   [& args]
