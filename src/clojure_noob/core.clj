@@ -60,3 +60,33 @@
         days (/ hours 24)
         weeks (/ days 7)]
     weeks))
+
+; loops and recursion
+
+  (defn abs
+    "calculates absolute value of a number"
+    [n]
+    (if (< n 0)
+        (* -1 n)
+        n))
+
+    (defn avg
+      "returns the avg of two arguments"
+      [a b]
+      (/ (+ a b) 2))
+
+    (defn good-enough?
+      "tests if a guess is close to the square root"
+      [number guess]
+      (let [diff (- (* guess guess) number)]
+        (if (< (abs diff) 0.0001)
+          true
+          false)))
+
+    (defn sqrt
+      "return the sqr a a number"
+      ([number] (sqrt number 1.0))
+      ([number guess]
+        (if (good-enough? number guess)
+        guess
+        (sqrt number (avg guess (/ number guess))))))
